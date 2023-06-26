@@ -1,0 +1,10 @@
+.header{
+    background: #250919;
+    height: 50px;
+    padding: 20px;
+}
+
+.headerTitle{
+    font-size: 16px;
+    color: #fff;
+}
