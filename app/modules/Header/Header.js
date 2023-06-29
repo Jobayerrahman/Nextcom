@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Head from 'next/head'
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 class Header extends Component {
     render(){
         return (
