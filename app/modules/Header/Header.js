@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Head from 'next/head'
 import styles from './Header.module.scss';
+import TopNagivation from "../../components/TopNavigation/TopNavigation";
 class Header extends Component {
     render(){
         return (
@@ -12,7 +13,7 @@ class Header extends Component {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <header className={styles.header}>
-                    <h2 className={styles.headerTitle}>This a Header</h2>
+                    <TopNagivation/>
                 </header>
             </>
         )
