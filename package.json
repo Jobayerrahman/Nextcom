@@ -12,6 +12,9 @@
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.13.6",
     "next": "^13.4.9",
     "react": "18.2.0",
@@ -19,6 +22,7 @@
     "react-dom": "18.2.0",
     "react-material-ui-carousel": "^3.4.2",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "video-react": "^0.16.0"
   }
 }
