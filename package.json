@@ -15,8 +15,10 @@
     "@mui/material": "^5.13.6",
     "next": "^13.4.9",
     "react": "18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-material-ui-carousel": "^3.4.2",
+    "react-visibility-sensor": "^5.1.1",
     "sass": "^1.63.6"
   }
 }
