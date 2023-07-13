@@ -3,6 +3,7 @@ import TopBanner from "../../components/Banner/TopBanner";
 import AllService from "../../components/Services/AllService";
 import Summary from "../../components/Summary/Summary";
 import Videoplayer from "../../components/Video/Videoplayer";
+import Partner from "../../components/Partner/Partner";
 class HomePage extends Component {
     render(){
         return (
@@ -11,6 +12,7 @@ class HomePage extends Component {
                 <AllService/>
                 <Videoplayer/>
                 <Summary/>
+                <Partner/>
             </>
         )
     }
