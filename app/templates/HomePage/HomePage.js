@@ -4,6 +4,7 @@ import AllService from "../../components/Services/AllService";
 import Summary from "../../components/Summary/Summary";
 import Videoplayer from "../../components/Video/Videoplayer";
 import Partner from "../../components/Partner/Partner";
+import Blog from "../../components/Blog/Blog";
 class HomePage extends Component {
     render(){
         return (
@@ -12,6 +13,7 @@ class HomePage extends Component {
                 <AllService/>
                 <Videoplayer/>
                 <Summary/>
+                <Blog/>
                 <Partner/>
             </>
         )
