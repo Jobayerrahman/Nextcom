@@ -11,19 +11,19 @@ class TopBanner extends Component{
     render(){
         var items = [
             {
-                name: "Nextcom",
+                name: "Creative Work",
                 image: Bannerimage01,
                 description: "Grow up your Business with us"
             },
             {
-                name: "Nextcom",
+                name: "Amazing Prospects",
                 image: Bannerimage02,
-                description: "Grow up your Business with us"
+                description: "Quickly cummunicate bleeding-edge best practices"
             },
             {
-                name: "Nextcom",
+                name: "Flexible Works",
                 image: Bannerimage03,
-                description: "Grow up your Business with us"
+                description: "Seamlessly engineer effective synergy after e-business experiences"
             }
         ]
         return(
