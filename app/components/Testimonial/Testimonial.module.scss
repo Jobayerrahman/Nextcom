@@ -1,0 +1,99 @@
+@import '../../styles/colors.scss';
+.testimonialWrapper{
+    text-align: center;
+    background-image: url('../../../public/Image/Banner-03.jpg');
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+}
+
+.testimonialOverlay{
+    position:absolute;
+    min-height: 600px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    padding: 80px 300px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonialContent{
+    text-align: left;
+    padding: 0px 100px;
+}
+
+.testimonialContent h2{
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 58px;
+    margin-bottom: 20px;
+}
+
+.testimonialContent p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.testimonialContent a{
+    background: $primary-color;
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.testimonialScroller{
+    padding-left: 100px;
+    text-align: left;
+}
+
+.testimonialScrollerTitle{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}
+
+.testimonialScrollerBody{
+    width: 36rem;
+    height: auto;
+    background:#fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testimonialScrollerBody .slick-arrow{
+    display: none !important;
+}
+
+.testimonialScrollerItem p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.testimonialScrollerItem h3{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.testimonialScrollerRating{
+    margin: 10px 0px !important;
+}
+
+.testimonialScrollerBody .slick-dots{
+    bottom: 10px !important;
+    text-align: right !important;
+}
