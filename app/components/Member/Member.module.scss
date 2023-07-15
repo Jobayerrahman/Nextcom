@@ -1,0 +1,84 @@
+@import '../../styles/colors.scss';
+.memberWrapper{
+    padding: 100px 300px
+}
+
+.memberHeading{
+    font-size: 14px;
+    color: #707070;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.memberTitle{
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.memberDescribtion{
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.memberButton{
+    color: #ffffff;
+    background: $primary-color;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.memberButton:hover{
+    background: $second-color;
+}
+
+.memberSlider{
+    padding: 0px 40px;
+    text-align: center;
+}
+
+.memberCrad{
+    padding: 0px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.memberImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px 30px 20px 30px;
+    object-fit: cover;
+}
+
+.memberProfileTitle{
+    font-size: 20px;
+    color: #000000;
+    margin: 0px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.memberProfileDesignation{
+    font-size: 14px;
+    color: #707070;
+    margin: 0px;
+    margin-bottom: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.memberProfileDescribtion{
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
