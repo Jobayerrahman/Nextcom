@@ -9,9 +9,17 @@ class AllService extends Component{
     render(){
         return(
             <div className={styles.allServiceWrapper}>
-                <Service img={serviceImage01} />
-                <Service img={serviceImage02} />
-                <Service img={serviceImage03} />
+                <h2>What We Do</h2>
+                <div className={styles.allServiceDescribtion}>
+                    Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy.
+                    Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy.
+                    Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy.
+                    Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy.</div>
+                <div className={styles.allService}>
+                    <Service img={serviceImage01} />
+                    <Service img={serviceImage02} />
+                    <Service img={serviceImage03} />
+                </div>
             </div>
         );
     }

@@ -1,6 +1,30 @@
 .allServiceWrapper{
-    display: flex;
     margin: 40px 0px;
+    padding: 60px 200px;
+}
+
+.allServiceWrapper h2{
+    font-size: 42px;
+    color: #000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.allServiceDescribtion{
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #707070;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px 200px;
+}
+
+.allService{
+    padding: 50px 0px;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
