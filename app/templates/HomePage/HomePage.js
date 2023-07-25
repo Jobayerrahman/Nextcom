@@ -8,6 +8,7 @@ import Blog from "../../components/Blog/Blog";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Member from "../../components/Member/Member";
 import About from "../../components/About/About";
+import Expertise from "../../components/Expertise/Expertise";
 class HomePage extends Component {
     render(){
         return (
@@ -15,6 +16,7 @@ class HomePage extends Component {
                 <TopBanner/>
                 <AllService/>
                 <About/>
+                <Expertise/>
                 <Videoplayer/>
                 <Summary/>
                 <Blog/>
