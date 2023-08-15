@@ -1,6 +1,6 @@
 .aboutWrapper{
     margin: 0px;
-    padding: 100px 300px;
+    padding: 100px 150px;
 }
 
 .aboutIntroduction{
@@ -18,10 +18,9 @@
 .aboutIntroduction h2{
     font-size: 32px;
     color: #000000;
-    margin-bottom: 40px;
     letter-spacing: -2px;
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,7 +38,7 @@
 }
 
 .aboutContent{
-    padding: 20px 40px;
+    padding: 20px 10px;
 }
 
 .aboutCard{
@@ -71,4 +70,29 @@
     color: #707070;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .aboutWrapper{
+        padding: 100px 40px;
+    }
+    .aboutContent{
+        padding: 10px 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .aboutWrapper{
+        padding: 100px 20px;
+    }
+
+    .aboutContent{
+        padding: 0px;
+    }
+
 }

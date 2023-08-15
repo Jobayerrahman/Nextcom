@@ -1,5 +1,4 @@
 .allServiceWrapper{
-    margin: 40px 0px;
     padding: 60px 200px;
     border-bottom: 2px solid #e1e1e1;
 }
@@ -20,7 +19,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     text-align: center;
-    padding: 0px 200px;
+    padding: 0px 40px;
 }
 
 .allService{
@@ -28,4 +27,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .allServiceWrapper{
+        padding: 60px 20px;
+    }
+
+    .allServiceDescribtion{
+        padding: 0px 40px;
+    }
+
+    .allService{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .allServiceDescribtion{
+        padding: 0px 20px;
+    }
+
 }
