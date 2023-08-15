@@ -1,18 +1,13 @@
 import React from 'react';
-import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
+import TopNagivation from '../../components/TopNavigation/TopNavigation';
+import Expertise from '../../components/Expertise/Expertise';
+import About from "../../components/About/About";
 export default function AboutPage(){
-    const [value, setValue] = React.useState(2);
     return(
         <>
-            <Typography component="legend">Controlled</Typography>
-            <Rating
-                name="simple-controlled"
-                value={value}
-                onChange={(event, newValue) => {
-                setValue(newValue);
-                }}
-            />
+            <TopNagivation/>
+            <About/>
+            <Expertise/>
         </>
     )
 }
