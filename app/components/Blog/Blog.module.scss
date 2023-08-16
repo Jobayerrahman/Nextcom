@@ -3,7 +3,7 @@
     margin: 40px 0px;
     justify-content: space-around;
     align-items: center;
-    padding: 100px 300px;
+    padding: 100px;
     flex-direction: column;
 
 }
@@ -57,4 +57,24 @@
     color: #707070;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+    .blogWrapper{
+        padding: 60px;
+    }
+    .blogHeadTitle{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .blogWrapper{
+        padding: 30px;
+    }
+    .blogHeadTitle{
+        font-size: 26px;
+    }
 }

@@ -14,6 +14,22 @@ class Member extends Component {
             centerPadding: "60px",
             slidesToShow: 3,
             swipeToSlide: true,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                  },
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                  },
+                },
+              ],
             afterChange: function(index) {
               console.log(
                 `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
@@ -23,15 +39,17 @@ class Member extends Component {
         return (
             <div className={styles.memberWrapper}>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}>
-                        <h4 className={styles.memberHeading}>Meet the team</h4>
-                        <h2 className={styles.memberTitle}>Save your time and money by choosing our professional team.</h2>
-                        <p className={styles.memberDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a className={styles.memberButton}>See All Members</a>
+                    <Grid item xs={12} sm={12} md={4}>
+                        <div className={styles.memberIntroduction}>
+                            <h4 className={styles.memberHeading}>Meet the team</h4>
+                            <h2 className={styles.memberTitle}>Save your time and money by choosing our professional team.</h2>
+                            <p className={styles.memberDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a className={styles.memberButton}>See All Members</a>
+                        </div>
                     </Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={12} sm={12} md={8}>
                         <div className={styles.memberSlider}>
                             <Slider {...settings}>
                                 <div className={styles.memberCrad}>

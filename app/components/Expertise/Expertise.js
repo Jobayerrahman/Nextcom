@@ -15,14 +15,14 @@ class Expertise extends Component {
                 </div>
                 <div className={styles.expertiseContent}>
                     <div className={styles.expertiseContext} >
-                        <div style={{ width: 170, height: 170 }}>
+                        <div className={styles.expertiseProgressBar}>
                             <CircularProgressbar value={percentage1} text={`${percentage1}%`} />
                         </div>
                         <h2>Effective strategy</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor.</p>
                     </div>
                     <div className={styles.expertiseContext}>
-                        <div style={{ width: 170, height: 170 }}>
+                        <div className={styles.expertiseProgressBar}>
                             <CircularProgressbar value={percentage2} text={`${percentage2}%`} />
                         </div>
                         <h2>Effective strategy</h2>

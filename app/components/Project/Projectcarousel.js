@@ -11,6 +11,22 @@ class Projectcarousel extends Component {
             centerPadding: "60px",
             slidesToShow: 3,
             swipeToSlide: true,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                  },
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                  },
+                },
+              ],
             afterChange: function(index) {
               console.log(
                 `Slider Changed to: ${index + 1}, background: #222; color: #bada55`

@@ -2,7 +2,7 @@
 .videoPlayerWrapper{
     text-align: center;
     background-image: url('../../../public/Image/Banner-02.jpg');
-    min-height: 450px;
+    height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
 .videoPlayerCard{
     position:absolute;
-    min-height: 450px;
+    height: 450px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     padding: 100px 0px;
@@ -39,4 +39,22 @@
     cursor: pointer;
     width: 50px;
     height: 50px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .videoPlayerWrapper{
+        height: 550px;
+    }
+    .videoPlayerCard{
+        height: 550px;
+        padding: 100px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .videoPlayerCard{
+        padding: 100px 10px;
+    }
 }

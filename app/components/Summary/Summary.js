@@ -8,7 +8,7 @@ class Summary extends Component {
         return (
             <div className={styles.summaryWrapper}>
                 <Grid container spacing={4}>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h1 className={styles.counterNumber}>
                             <CountUp start={0} end={4220}>
                             {({ countUpRef, start }) => (
@@ -21,7 +21,7 @@ class Summary extends Component {
                         <h4 className={styles.counterTitle}>Working Hours</h4>
                         <hr className={styles.summaryUnderbar}/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h1 className={styles.counterNumber}>
                             <CountUp start={0} end={290}>
                             {({ countUpRef, start }) => (
@@ -34,7 +34,7 @@ class Summary extends Component {
                         <h4 className={styles.counterTitle}>Total Projects</h4>
                         <hr className={styles.summaryUnderbar}/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h1 className={styles.counterNumber}>
                             <CountUp start={0} end={150}>
                             {({ countUpRef, start }) => (
@@ -47,7 +47,7 @@ class Summary extends Component {
                         <h4 className={styles.counterTitle}>Work Completed</h4>
                         <hr className={styles.summaryUnderbar}/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} sm={6} md={3}>
                         <h1 className={styles.counterNumber}>
                             <CountUp start={0} end={67}>
                             {({ countUpRef, start }) => (

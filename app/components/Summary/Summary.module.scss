@@ -26,3 +26,16 @@
     width: 80px;
     background: #040404;
 }
+
+@media only screen and (max-width: 1024px) {
+    .summaryWrapper{
+        padding: 100px;
+    }
+    .counterNumber{
+        font-size: 30px;
+    }
+    
+    .counterTitle{
+        font-size: 12px;
+    }
+}

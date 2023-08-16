@@ -6,14 +6,14 @@ class Footer extends Component {
         return (
             <div className={styles.footerWrapper}>
                 <Grid container spacing={5}>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={12} md={3}>
                         <div className={styles.footerSection}>
                             <h2 className={styles.footerHeader}>Nextcom</h2>
                             <p>We create digital experiences for brands companies by using creativity.</p>
                             <span>Nextcom@Copyright2023</span>
                         </div>
                     </Grid>
-                    <Grid item xs>
+                    <Grid item xs={12} sm={6} md={2}>
                         <div className={styles.footerSection}>
                             <h4>Company</h4>
                             <ul>
@@ -24,7 +24,7 @@ class Footer extends Component {
                             </ul>
                         </div>
                     </Grid>
-                    <Grid item xs>
+                    <Grid item xs={12} sm={6} md={2}>
                         <div className={styles.footerSection}>
                             <h4>Resources</h4>
                             <ul>
@@ -35,7 +35,7 @@ class Footer extends Component {
                             </ul>
                         </div>
                     </Grid>
-                    <Grid item xs>
+                    <Grid item xs={12} sm={6} md={2}>
                         <div className={styles.footerSection}>
                             <h4>Additional</h4>
                             <ul>
@@ -46,7 +46,7 @@ class Footer extends Component {
                             </ul>
                         </div>
                     </Grid>
-                    <Grid item xs>
+                    <Grid item xs={12} sm={6} md={2}>
                         <div className={styles.footerSection}>
                             <h4>Services</h4>
                             <ul>

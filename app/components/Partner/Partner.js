@@ -12,8 +12,24 @@ class Partner extends Component {
         const settings = {
             className: "center",
             centerPadding: "60px",
-            slidesToShow: 5,
+            slidesToShow: 4,
             swipeToSlide: true,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                  },
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                  },
+                },
+              ],
             afterChange: function(index) {
               console.log(
                 `Slider Changed to: ${index + 1}, background: #222; color: #bada55`

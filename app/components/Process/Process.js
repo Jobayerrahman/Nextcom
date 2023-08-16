@@ -67,10 +67,10 @@ export default function FullWidthProcessTabs(){
                     variant="fullWidth"
                     aria-label="full width tabs example"
                 >
-                    <Tab label="Planning" {...allProps(0)}/>
-                    <Tab label="Researching" {...allProps(1)}/>
-                    <Tab label="Target" {...allProps(2)}/>
-                    <Tab label="Execution" {...allProps(3)}/>
+                    <Tab className={styles.processWrapperTab} label="Planning" {...allProps(0)}/>
+                    <Tab className={styles.processWrapperTab} label="Researching" {...allProps(1)}/>
+                    <Tab className={styles.processWrapperTab} label="Target" {...allProps(2)}/>
+                    <Tab className={styles.processWrapperTab} label="Execution" {...allProps(3)}/>
                 </Tabs>
             </div>
             <SwipeableViews

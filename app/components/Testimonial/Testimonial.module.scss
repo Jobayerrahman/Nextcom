@@ -2,7 +2,7 @@
 .testimonialWrapper{
     text-align: center;
     background-image: url('../../../public/Image/Banner-03.jpg');
-    min-height: 600px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,11 +11,11 @@
 
 .testimonialOverlay{
     position:absolute;
-    min-height: 600px;
+    height: 600px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     display: flex;
-    padding: 80px 300px;
+    padding: 100px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
@@ -25,7 +25,7 @@
 
 .testimonialContent{
     text-align: left;
-    padding: 0px 100px;
+    padding: 0px 30px;
 }
 
 .testimonialContent h2{
@@ -53,9 +53,12 @@
     cursor: pointer;
 }
 
+.testimonialContent a:hover{
+    background: $second-color;
+}
+
 
 .testimonialScroller{
-    padding-left: 100px;
     text-align: left;
 }
 
@@ -96,4 +99,41 @@
 .testimonialScrollerBody .slick-dots{
     bottom: 10px !important;
     text-align: right !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .testimonialWrapper{
+        height: 800px;
+    }
+    
+    .testimonialOverlay{
+        height: 800px;
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .testimonialContent{
+        padding: 0px 60px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .testimonialWrapper{
+        height: 900px;
+    }
+    
+    .testimonialOverlay{
+        height: 900px;
+    }
+
+    .testimonialContent{
+        padding: 10px;
+    }
+
+    .testimonialScrollerBody{
+        width: 22rem;
+        border-radius: 10px;
+        padding: 20px;
+    }
 }

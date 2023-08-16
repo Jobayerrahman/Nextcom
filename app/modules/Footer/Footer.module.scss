@@ -1,7 +1,7 @@
 .footerWrapper{
     background: #262b35;
-    height: 300px;
-    padding: 40px 220px;
+    height: auto;
+    padding: 100px 200px;
 }
 
 .footerHeader{
@@ -9,7 +9,7 @@
     color: #fafafa;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 700;
-    margin: 0px;
+    margin: 10px 0px;
 }
 
 .footerSection p{
@@ -44,4 +44,21 @@
 
 .footerSection ul>li a:hover{
     color: #fcfcfc;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .footerWrapper{
+        padding: 80px 40px;
+    }
+    .footerHeader{
+        margin: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .footerWrapper{
+        padding: 40px 30px;
+    }
 }
