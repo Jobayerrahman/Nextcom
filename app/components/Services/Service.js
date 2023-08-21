@@ -9,7 +9,7 @@ class Service extends Component{
             <div className={styles.serviceCard}>
                 <Image className={styles.serviceImage} src={this.props.img}/>
                 <div className={styles.serviceCardBody}>
-                    <h1 className={styles.serviceTitle}>Heading Title</h1>
+                    <h1 className={styles.serviceTitle}>{this.props.service.title}</h1>
                     <p className={styles.servicesDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <Button className={styles.serviceButton}>Read more</Button>
                 </div>
