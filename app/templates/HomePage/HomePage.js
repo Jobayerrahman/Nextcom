@@ -16,7 +16,7 @@ class HomePage extends Component {
         return (
             <>
                 <TopBanner/>
-                <AllService/>
+                <AllService services={this.props.services}/>
                 <About/>
                 <Projectcarousel/>
                 <Process/>
