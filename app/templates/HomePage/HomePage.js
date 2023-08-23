@@ -23,7 +23,7 @@ class HomePage extends Component {
                 <Expertise/>
                 <Videoplayer/>
                 <Summary/>
-                <Blog/>
+                <Blog blogs={this.props.blogs}/>
                 <Testimonial/>
                 <Member/>
                 <Partner/>

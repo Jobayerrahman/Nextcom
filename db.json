@@ -1,0 +1,19 @@
+{
+    "blogs" : [
+        {
+            "id" : 1,
+            "title": "The best way to predict the future is to create it",
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+        },
+        {
+            "id" : 2,
+            "title": "The best way to predict the future is to create it",
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+        },
+        {
+            "id" : 3,
+            "title": "The best way to predict the future is to create it",
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+        }
+    ]
+}

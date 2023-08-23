@@ -7,6 +7,9 @@ import serviceImage02 from '../../../public/Image/Banner-02.jpg'
 import serviceImage03 from '../../../public/Image/Banner-03.jpg'
 class Blog extends Component {
     render() {
+
+        const blogs = this.props.blogs;
+        console.log(blogs);
         return (
             <div className={styles.blogWrapper}>
                 <h4 className={styles.blogHeader}>Get the latest insights</h4>

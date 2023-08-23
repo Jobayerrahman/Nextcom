@@ -1,12 +1,5 @@
 import Default from '../app/layouts/Default/Default'
 import HomePage from '../app/templates/HomePage/HomePage'
-export default function Home({services}) {
-  return (
-    <Default>
-      <HomePage services={services}/>
-    </Default>
-  )
-}
 
 
 export async function getStaticProps(){
@@ -18,4 +11,22 @@ export async function getStaticProps(){
           services: data,
       }, 
   }
+}
+
+export default function Home({services,blogs}) {
+  return (
+    <Default>
+      <HomePage services={services} blogs={blogs}/>
+    </Default>
+  )
+}
+
+
+
+export async function getServerSideProps(){
+  const res = await fetch('http://localhost:5000/blogs');
+  const data = await res.json()
+
+  return{ props:{blogs:data}}
+
 }
