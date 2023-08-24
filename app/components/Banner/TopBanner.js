@@ -41,7 +41,7 @@ function Item(props)
     return (
         <div className={styles.topBannerWrapper}>
             <div className={styles.topFixedBanner}>
-                <Image className={styles.topBannerImage} src={props.item.image}/>
+                <Image className={styles.topBannerImage} src={props.item.image} alt=''/>
                 <div className={styles.topContent}>
                     <h1 className={styles.topTitle}>{props.item.name}</h1>
                     <h5 className={styles.topSubTitle}>{props.item.description}</h5>

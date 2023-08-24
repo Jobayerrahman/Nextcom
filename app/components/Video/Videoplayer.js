@@ -29,7 +29,6 @@ class Videoplayer extends Component {
     handleClose=()=>this.setState({open:false});
     render() {
         const { open } = this.state;
-        console.log(open);
         return (
             <div className={styles.videoPlayer}>
                 <div className={styles.videoPlayerWrapper}>

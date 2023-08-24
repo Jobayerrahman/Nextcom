@@ -9,11 +9,11 @@ class TopNagivation extends Component {
                     <h2 className={styles.navTitle}>Nextcom</h2>
                     
                     <div className={styles.navItemList}>
-                        <a exact activeStyle={{color:'#00a8ee'}} className={styles.navItem} href="/">Home</a>
-                        <a exact activeStyle={{color:'#00a8ee'}} className={styles.navItem} href="/service">Service</a>
-                        <a exact activeStyle={{color:'#00a8ee'}} className={styles.navItem} href="/project">Project</a>
-                        <a exact activeStyle={{color:'#00a8ee'}} className={styles.navItem} href="/about">About</a>
-                        <a exact activeStyle={{color:'#00a8ee'}} className={styles.navItem} href="/contact">Contact</a>
+                        <a exact  className={styles.navItem} href="/">Home</a>
+                        <a exact  className={styles.navItem} href="/service">Service</a>
+                        <a exact  className={styles.navItem} href="/project">Project</a>
+                        <a exact  className={styles.navItem} href="/about">About</a>
+                        <a exact  className={styles.navItem} href="/contact">Contact</a>
                     </div>
                 </div>
             </Container>

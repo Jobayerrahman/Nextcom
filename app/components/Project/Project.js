@@ -7,7 +7,7 @@ class Project extends Component {
         return (
             <div className={styles.projectWrapper}>
                 <div className={styles.projectImageWrapper}>
-                    <Image className={styles.projectImage} src={projectImage01}/>
+                    <Image className={styles.projectImage} src={projectImage01} alt=''/>
                     <div className={styles.projectImageOverlay}></div>
                 </div>
                 <div className={styles.projectContent}>

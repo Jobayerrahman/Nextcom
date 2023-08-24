@@ -17,17 +17,20 @@ function AllService({services}){
     //         .catch(console.error);
     // }, []);
     return(
-        <div className={styles.allServiceWrapper}>
-            {services.map((service) => (
-                <div>
-                    <h2>{service.heading}</h2>
-                    <div className={styles.allServiceDescribtion}>{service.description}</div>
-                    <div className={styles.allService}>{service.service.map((s)=>(
-                        <Service img={serviceImage01} service={s}/>
-                    ))}</div>
+        <>
+            {services.map((s) => (
+                <div className={styles.allServiceWrapper} key={s.id}>
+                    <h2>{s.heading}</h2>
+                    <div className={styles.allServiceDescribtion}>{s.description}</div>
+                    <div className={styles.allService}>
+                        {s.service.map((s)=>(<div key={s.id}>
+                            <Service img={serviceImage01} service={s}/>
+                            </div>)
+                        )}
+                    </div>
                 </div>
             ))}
-        </div>
+        </>
     );
 }
 

@@ -81,7 +81,7 @@ export default function FullWidthProcessTabs(){
                 <ProcessTab value={value} index={0} dir={theme.direction}>
                     <div className={styles.processContentTab}>
                         <div className={styles.processTabImage}>
-                            <Image className={styles.processImage} src={processImage01}/>
+                            <Image className={styles.processImage} src={processImage01} alt=''/>
                         </div>
                         <div className={styles.processContext}>
                             <h4>Planning process</h4>
@@ -94,7 +94,7 @@ export default function FullWidthProcessTabs(){
                 <ProcessTab value={value} index={1} dir={theme.direction}>
                     <div className={styles.processContentTab}>
                         <div className={styles.processTabImage}>
-                            <Image className={styles.processImage} src={processImage02}/>
+                            <Image className={styles.processImage} src={processImage02} alt=''/>
                         </div>
                         <div className={styles.processContext}>
                             <h4>Researching process</h4>
@@ -107,7 +107,7 @@ export default function FullWidthProcessTabs(){
                 <ProcessTab value={value} index={2} dir={theme.direction}>
                     <div className={styles.processContentTab}>
                         <div className={styles.processTabImage}>
-                            <Image className={styles.processImage} src={processImage01}/>
+                            <Image className={styles.processImage} src={processImage01} alt=''/>
                         </div>
                         <div className={styles.processContext}>
                             <h4>Targeting process</h4>
@@ -120,7 +120,7 @@ export default function FullWidthProcessTabs(){
                 <ProcessTab value={value} index={3} dir={theme.direction}>
                     <div className={styles.processContentTab}>
                         <div className={styles.processTabImage}>
-                            <Image className={styles.processImage} src={processImage03}/>
+                            <Image className={styles.processImage} src={processImage03} alt=''/>
                         </div>
                         <div className={styles.processContext}>
                             <h4>Execution process</h4>

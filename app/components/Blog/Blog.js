@@ -9,40 +9,21 @@ class Blog extends Component {
     render() {
 
         const blogs = this.props.blogs;
-        console.log(blogs);
         return (
             <div className={styles.blogWrapper}>
                 <h4 className={styles.blogHeader}>Get the latest insights</h4>
                 <h2 className={styles.blogHeadTitle}>Stay updated with the latest trends and business news</h2>
                 <Grid container spacing={4}>
-                    <Grid item xs={12} sm={6} md={3}>
-                        <div className={styles.blogCard}>
-                            <Image className={styles.blogImage} src={serviceImage01}/>
-                            <h1 className={styles.blogTitle}>The best way to predict the future is to create it</h1>
-                            <p className={styles.blogDescription}>Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy...</p>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={3}>
-                        <div className={styles.blogCard}>
-                            <Image className={styles.blogImage} src={serviceImage02}/>
-                            <h1 className={styles.blogTitle}>The best way to predict the future is to create it</h1>
-                            <p className={styles.blogDescription}>Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy...</p>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={3}>
-                        <div className={styles.blogCard}>
-                            <Image className={styles.blogImage} src={serviceImage03}/>
-                            <h1 className={styles.blogTitle}>The best way to predict the future is to create it</h1>
-                            <p className={styles.blogDescription}>Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy...</p>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={3}>
-                        <div className={styles.blogCard}>
-                            <Image className={styles.blogImage} src={serviceImage01}/>
-                            <h1 className={styles.blogTitle}>The best way to predict the future is to create it</h1>
-                            <p className={styles.blogDescription}>Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy...</p>
-                        </div>
-                    </Grid>
+                    {blogs.map((blog)=>(
+                            <Grid item xs={12} sm={6} md={3} key={blog.id}>
+                                <div className={styles.blogCard}>
+                                    <Image className={styles.blogImage} src={serviceImage01} alt=''/>
+                                    <h1 className={styles.blogTitle}>{blog.title}</h1>
+                                    <p className={styles.blogDescription}>{blog.des}</p>
+                                </div>
+                            </Grid>
+                        )
+                    )}
                 </Grid>
             </div>
         );

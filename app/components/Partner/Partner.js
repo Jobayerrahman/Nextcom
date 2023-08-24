@@ -40,34 +40,34 @@ class Partner extends Component {
             <div className={styles.partnerWrapper}>
                 <Slider {...settings}>
                 <div className={styles.partnerItem}>
-                    <Image  src={amazon}/>
+                    <Image  src={amazon} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={jetblue}/>
+                    <Image  src={jetblue} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={linkedin}/>
+                    <Image  src={linkedin} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={natgeo}/>
+                    <Image  src={natgeo} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={zillow}/>
+                    <Image  src={zillow} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={amazon}/>
+                    <Image  src={amazon} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={jetblue}/>
+                    <Image  src={jetblue} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={linkedin}/>
+                    <Image  src={linkedin} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={natgeo}/>
+                    <Image  src={natgeo} alt=''/>
                 </div>
                 <div  className={styles.partnerItem}>
-                    <Image  src={zillow}/>
+                    <Image  src={zillow} alt=''/>
                 </div>
                 
                 </Slider>

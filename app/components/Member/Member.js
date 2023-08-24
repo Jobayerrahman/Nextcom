@@ -53,35 +53,35 @@ class Member extends Component {
                         <div className={styles.memberSlider}>
                             <Slider {...settings}>
                                 <div className={styles.memberCrad}>
-                                    <Image className={styles.memberImage} src={profile}/>
+                                    <Image className={styles.memberImage} src={profile} alt=''/>
                                     <h3 className={styles.memberProfileTitle}>Jhon Smit</h3>
                                     <span className={styles.memberProfileDesignation}>Software Engineer</span>
                                     <p className={styles.memberProfileDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     <div className={styles.memberMediaIcon}></div>
                                 </div>
                                 <div className={styles.memberCrad}>
-                                    <Image className={styles.memberImage} src={profile}/>
+                                    <Image className={styles.memberImage} src={profile} alt=''/>
                                     <h3 className={styles.memberProfileTitle}>Jhon Smit</h3>
                                     <span className={styles.memberProfileDesignation}>Software Engineer</span>
                                     <p className={styles.memberProfileDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     <div className={styles.memberMediaIcon}></div>
                                 </div>
                                 <div className={styles.memberCrad}>
-                                    <Image className={styles.memberImage} src={profile}/>
+                                    <Image className={styles.memberImage} src={profile} alt=''/>
                                     <h3 className={styles.memberProfileTitle}>Jhon Smit</h3>
                                     <span className={styles.memberProfileDesignation}>Software Engineer</span>
                                     <p className={styles.memberProfileDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     <div className={styles.memberMediaIcon}></div>
                                 </div>
                                 <div className={styles.memberCrad}>
-                                    <Image className={styles.memberImage} src={profile}/>
+                                    <Image className={styles.memberImage} src={profile} alt=''/>
                                     <h3 className={styles.memberProfileTitle}>Jhon Smit</h3>
                                     <span className={styles.memberProfileDesignation}>Software Engineer</span>
                                     <p className={styles.memberProfileDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     <div className={styles.memberMediaIcon}></div>
                                 </div>
                                 <div className={styles.memberCrad}>
-                                    <Image className={styles.memberImage} src={profile}/>
+                                    <Image className={styles.memberImage} src={profile} alt=''/>
                                     <h3 className={styles.memberProfileTitle}>Jhon Smit</h3>
                                     <span className={styles.memberProfileDesignation}>Software Engineer</span>
                                     <p className={styles.memberProfileDescribtion}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

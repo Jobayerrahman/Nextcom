@@ -3,12 +3,15 @@ import HomePage from '../app/templates/HomePage/HomePage'
 
 
 export async function getStaticProps(){
-  const res = await fetch('http://localhost:3000/api/serviceapi');
-  const data = await res.json()
+  const res1 = await fetch('http://localhost:3000/api/serviceapi');
+  const res2 = await fetch('http://localhost:5000/blogs');
+  const data1 = await res1.json()
+  const data2 = await res2.json()
   
   return { 
       props:{
-          services: data,
+          services: data1,
+          blogs:data2,
       }, 
   }
 }
@@ -23,10 +26,17 @@ export default function Home({services,blogs}) {
 
 
 
-export async function getServerSideProps(){
-  const res = await fetch('http://localhost:5000/blogs');
-  const data = await res.json()
+// export async function getServerSideProps(){
+//   const res1 = await fetch('http://localhost:3000/api/serviceapi');
+//   const res2 = await fetch('http://localhost:5000/blogs');
+//   const data1 = await res1.json()
+//   const data2 = await res2.json()
+  
+//   return { 
+//       props:{
+//           services: data1,
+//           blogs:data2,
+//       }, 
+//   }
 
-  return{ props:{blogs:data}}
-
-}
+// }
