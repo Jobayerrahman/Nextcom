@@ -1,8 +1,5 @@
-import { NextResponse } from "next/server";
-import connectMongoDB from "../../../libs/mongodb";
-import Service from "../../../models/service";
-
-
+import connectMongoDB from "../../../app/libs/server";
+import Service from "../../../app/models/service";
 
 export default async function handler(req,res){
     const {method} =req
@@ -20,8 +17,6 @@ export default async function handler(req,res){
             break
             case 'POST':
               try {
-                // const { title, description } = await req.json();
-                //const service = await Service.create(req.body) /* create a new model in the database */
                 const service = await Service.create(
                     req.body
                   )
@@ -37,13 +32,3 @@ export default async function handler(req,res){
               break
         }
     }
-    // const { title, description } = await request.json();
-    // await connectMongoDB();
-    // await Service.create({title,description});
-    // return NextResponse.json({message: "Service Created"}, {status: 201});
-
-// export async function GET(){
-//     await connectMongoDB();
-//     const services = await Service.find();
-//     return NextResponse.json({services})
-// }
