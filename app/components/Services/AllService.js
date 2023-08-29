@@ -18,18 +18,15 @@ function AllService({services}){
     // }, []);
     return(
         <>
-            {services.map((s) => (
-                <div className={styles.allServiceWrapper} key={s.id}>
-                    <h2>{s.heading}</h2>
-                    <div className={styles.allServiceDescribtion}>{s.description}</div>
-                    <div className={styles.allService}>
-                        {s.service.map((s)=>(<div key={s.id}>
-                            <Service img={serviceImage01} service={s}/>
-                            </div>)
-                        )}
-                    </div>
+            <div className={styles.allServiceWrapper}>
+                <h2>What We Do</h2>
+                <div className={styles.allServiceDescribtion}>Lorem ipsum is simply dummy text printing typesetting industry 
+                lorem ipsum has dummy. Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
+                Lorem ipsum is simply dummy text printing typesetting industry lorem. </div>
+                <div className={styles.allService}>
+                    {services.map((s)=> <Service key={s.id} img={serviceImage01} service={s}/>)}
                 </div>
-            ))}
+            </div>
         </>
     );
 }

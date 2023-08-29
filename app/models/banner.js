@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
-const serviceSchema = new Schema(
+const bannerSchema = new Schema(
     {
         title: {
             type: String,
@@ -22,8 +22,6 @@ const serviceSchema = new Schema(
     }
 );
 
+const TopBanner = mongoose.models.TopBanner || mongoose.model('TopBanner', bannerSchema)
 
-const Service = mongoose.models.Service || mongoose.model('Service', serviceSchema)
-
-
-export default Service;
+export default TopBanner;

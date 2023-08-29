@@ -8,7 +8,7 @@ class ServicePage extends Component {
         return (
             <div>
                 <TopNagivation/>
-                <AllService/>
+                <AllService services={this.props.services}/>
                 <Process/>
             </div>
         );
