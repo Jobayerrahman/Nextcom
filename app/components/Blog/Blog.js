@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import styles from './Blog.module.scss';
 import Image from "next/image";
 import Grid from '@mui/material/Grid';
-import serviceImage01 from '../../../public/Image/Banner-01.jpg'
-import serviceImage02 from '../../../public/Image/Banner-02.jpg'
-import serviceImage03 from '../../../public/Image/Banner-03.jpg'
 class Blog extends Component {
     render() {
-
         const blogs = this.props.blogs;
         return (
             <div className={styles.blogWrapper}>
@@ -17,9 +13,18 @@ class Blog extends Component {
                     {blogs.map((blog)=>(
                             <Grid item xs={12} sm={6} md={3} key={blog.id}>
                                 <div className={styles.blogCard}>
-                                    <Image className={styles.blogImage} src={serviceImage01} alt=''/>
+                                    <Image 
+                                        className={styles.blogImage} 
+                                        src={blog.image_url} 
+                                        alt='' 
+                                        width={300} 
+                                        height={300}
+                                        style={{
+                                            objectFit: 'cover'
+                                        }}
+                                    />
                                     <h1 className={styles.blogTitle}>{blog.title}</h1>
-                                    <p className={styles.blogDescription}>{blog.des}</p>
+                                    <p className={styles.blogDescription}>{blog.description}</p>
                                 </div>
                             </Grid>
                         )

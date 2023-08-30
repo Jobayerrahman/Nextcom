@@ -15,7 +15,7 @@ class HomePage extends Component {
     render(){
         return (
             <>
-                <TopBanner/>
+                <TopBanner topBanner={this.props.topBanner}/>
                 <AllService services={this.props.services}/>
                 <About/>
                 <Projectcarousel/>

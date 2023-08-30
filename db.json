@@ -3,22 +3,26 @@
         {
             "id" : 0,
             "title": "The best way to predict the future is to create it",
-            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy",
+            "image": "http://localhost:3000/Image/Banner-02.jpg"
         },
         {
             "id" : 1,
             "title": "The best way to predict the future is to create it",
-            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy",
+            "image": "http://localhost:3000/Image/Banner-02.jpg"
         },
         {
             "id" : 2,
             "title": "The best way to predict the future is to create it",
-            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy",
+            "image": "http://localhost:3000/Image/Banner-02.jpg"
         },
         {
             "id" : 3,
             "title": "The best way to predict the future is to create it",
-            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy"
+            "des": "Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy",
+            "image": "http://localhost:3000/Image/Banner-02.jpg"
         }
     ]
 }

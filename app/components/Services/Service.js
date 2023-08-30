@@ -5,10 +5,17 @@ import Button from '@mui/material/Button';
 
 class Service extends Component{
     render(){
-        const { title, description} = this.props.service;
+        const { title, description, image_url } = this.props.service;
         return(
             <div className={styles.serviceCard}>
-                <Image className={styles.serviceImage} src={this.props.img} alt=""/>
+                <Image 
+                    className={styles.serviceImage} 
+                    src={image_url} 
+                    alt=""
+                    width={320} 
+                    height={192}
+                    style={{objectFit: 'cover'}}
+                />
                 <div className={styles.serviceCardBody}>
                     <h1 className={styles.serviceTitle}>{title}</h1>
                     <p className={styles.servicesDescribtion}>{description}</p>
