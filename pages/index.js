@@ -1,6 +1,20 @@
-import Default from '../app/layouts/Default/Default'
-import HomePage from '../app/templates/HomePage/HomePage'
+import React, { Component } from 'react';
+import Default from '../app/layouts/Default/Default';
+import HomePage from '../app/templates/HomePage/HomePage';
+import HomeContext from '../app/libs/contextApi/HomeContext';
 
+class Home extends Component{
+  render(){
+    const {topBanner, service, blog} = this.props;
+    return (
+      <Default>
+        <HomeContext.Provider value={{topBannerItems:{topBanner}, services:{service}, blogs:{blog}}}>
+          <HomePage/>
+        </HomeContext.Provider>
+      </Default>
+    )
+  }
+}
 
 export async function getStaticProps(){
   const topBanner_Response = await fetch('http://localhost:3000/api/topbanner');
@@ -12,16 +26,10 @@ export async function getStaticProps(){
   return { 
       props:{
           topBanner: topBanner_Data.data,
-          services: service_Data.data,
-          blogs: blog_Data.data
+          service: service_Data.data,
+          blog: blog_Data.data
       }, 
   }
 }
 
-export default function Home({topBanner,services,blogs}) {
-  return (
-    <Default>
-      <HomePage topBanner={topBanner} services={services} blogs={blogs}/>
-    </Default>
-  )
-}
+export default Home;

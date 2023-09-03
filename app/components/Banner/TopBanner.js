@@ -3,35 +3,35 @@ import Image from 'next/image';
 import styles from './TopBanner.module.scss';
 import Button from '@mui/material/Button';
 import Carousel from 'react-material-ui-carousel';
+import HomeContext from '../../libs/contextApi/HomeContext';
 
 class TopBanner extends Component{
-    render(){
-        // var items = [
-        //     {
-        //         name: "Creative Work",
-        //         image: Bannerimage01,
-        //         description: "Grow up your Business with us"
-        //     },
-        //     {
-        //         name: "Amazing Prospects",
-        //         image: Bannerimage02,
-        //         description: "Quickly cummunicate bleeding-edge best practices"
-        //     },
-        //     {
-        //         name: "Flexible Works",
-        //         image: Bannerimage03,
-        //         description: "Seamlessly engineer effective synergy after e-business experiences"
-        //     }
-        // ]
+    // constructor(props){
+    //     super(props);
 
-        const topBannerItems = this.props.topBanner;
-        console.log(topBannerItems);
+    //     this.state = {
+    //         topbanner: [],
+    //     };
+    // }
+
+    // componentDidMount(){
+    //     fetch('http://localhost:3000/api/topbanner')
+    //         .then(response => response.json())
+    //         .then(data => this.setState({ topbanner: data.data }));
+    // }
+    render(){
+
+        // const {topbanner} = this.state;
         return(
-            <Carousel className={styles.topCarousel}>
-                {
-                    topBannerItems.map( (item, i) => <Item key={i} item={item} /> )
-                }
-            </Carousel>
+            <HomeContext.Consumer>
+                {({topBannerItems}) =>(
+                    <Carousel className={styles.topCarousel}>
+                        {
+                            (topBannerItems.topBanner).map( (item, i) => <Item key={i} item={item} /> )
+                        }
+                    </Carousel>
+                )}
+            </HomeContext.Consumer>
         )
     }
 }

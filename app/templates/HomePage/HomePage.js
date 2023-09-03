@@ -15,15 +15,15 @@ class HomePage extends Component {
     render(){
         return (
             <>
-                <TopBanner topBanner={this.props.topBanner}/>
-                <AllService services={this.props.services}/>
+                <TopBanner/>
+                <AllService/>
                 <About/>
                 <Projectcarousel/>
                 <Process/>
                 <Expertise/>
                 <Videoplayer/>
                 <Summary/>
-                <Blog blogs={this.props.blogs}/>
+                <Blog/>
                 <Testimonial/>
                 <Member/>
                 <Partner/>

@@ -1,5 +1,6 @@
 import Service from "./Service";
 import styles from './AllService.module.scss';
+import HomeContext from "../../libs/contextApi/HomeContext";
 function AllService({services}){
     // const [services, setServices] = useState([])
     // useEffect(() => {
@@ -19,9 +20,13 @@ function AllService({services}){
                 <div className={styles.allServiceDescribtion}>Lorem ipsum is simply dummy text printing typesetting industry 
                 lorem ipsum has dummy. Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
                 Lorem ipsum is simply dummy text printing typesetting industry lorem. </div>
-                <div className={styles.allService}>
-                    {services.map((s)=> <Service key={s.id} service={s}/>)}
-                </div>
+                <HomeContext.Consumer>
+                    {({services}) =>(
+                        <div className={styles.allService}>
+                            {(services.service).map((s)=> <Service key={s.id} service={s}/>)}
+                        </div>
+                    )}
+                </HomeContext.Consumer>
             </div>
         </>
     );
