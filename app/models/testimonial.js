@@ -5,25 +5,25 @@ const testimonialSchema = new Schema(
     {
         name: {
             type: String,
-            required: [true, 'Please provide the service title.'],
+            required: [true, 'Please provide the testimonial title.'],
             maxlength: [60, 'Title cannot be more than 60 characters'],
         },
         degisnation: {
             type: String,
-            required: [true, 'Please provide the service title.'],
-            maxlength: [60, 'Title cannot be more than 60 characters'],
+            required: [true, 'Please provide the testimonial degisnation.'],
+            maxlength: [60, 'Degisnation cannot be more than 60 characters'],
         },
         description: {
             type: String,
-            required: [true, 'Please provide the service Title.'],
+            required: [true, 'Please provide the testimonial description.'],
             maxlength: [100, 'Description cannot be more than 100 characters'],
         },
         image_url: {
-            required: [true, 'Please provide an image url for serveice.'],
+            required: [true, 'Please provide an image url for testimonial.'],
             type: String,
           },
         rating: {
-            required: [true, 'Please provide an image url for serveice.'],
+            required: [true, 'Please provide rating our company.'],
             type: String,
           },
     },
@@ -32,7 +32,7 @@ const testimonialSchema = new Schema(
     }
 );
 
-const Testimonial = mongoose.models.Testimonial || mongoose.model('Testimonial', blogSchema)
+const Testimonial = mongoose.models.Testimonial || mongoose.model('Testimonial', testimonialSchema)
 
 
 export default Testimonial;
