@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+
+.sideNavigationWrapper{
+    width: 500px;
+    height: 80vh;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sideNavigationWrapper{
+    ul {
+        margin: 10px;
+        padding: 0px 30px;
+    }
+    li {
+        padding: 40px 5px 10px 10px;
+        list-style: none;
+        border-bottom: 2px solid #e0e0e0;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+    }
+    li:hover{
+        color: #575050;
+    }
+}

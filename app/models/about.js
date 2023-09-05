@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 
 const aboutSchema = new Schema(
     {
-        name:{
+        title:{
             type: String,
             require: [true, 'Please provide the about title.'],
             maxlength: [60, 'Title cannot be more than 60 characters']
@@ -13,7 +13,7 @@ const aboutSchema = new Schema(
             maxlength: [160, 'Title cannot be more than 60 characters']
         },
         icon_url:{
-            required: [true, 'Please provide an image url for about.'],
+            required: [false, 'Please provide an image url for about.'],
             type: String,
         }
     },

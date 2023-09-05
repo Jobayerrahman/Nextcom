@@ -3,6 +3,7 @@ import styles from './About.module.scss';
 import Grid from '@mui/material/Grid';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-solid-svg-icons';
+import HomeContext from '../../libs/contextApi/HomeContext';
 class About extends Component {
     render() {
         return (
@@ -17,44 +18,23 @@ class About extends Component {
                     </Grid>
                     <Grid item xs={12} sm={12} md={8}>
                         <div className={styles.aboutContent}>
-                            <Grid container spacing={2}>
-                                <Grid item xs={12} sm={12} md={6}>
-                                    <div className={styles.aboutCard}>
-                                        <FontAwesomeIcon className={styles.aboutIcon} icon={faPlayCircle} />
-                                        <div className={styles.aboutContext}>
-                                            <h2>Effective strategy</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor.</p>
-                                        </div>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={12} sm={12} md={6}>
-                                    <div className={styles.aboutCard}>
-                                        <FontAwesomeIcon className={styles.aboutIcon} icon={faPlayCircle} />
-                                        <div className={styles.aboutContext}>
-                                            <h2>Effective strategy</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor.</p>
-                                        </div>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={12} sm={12} md={6}>
-                                    <div className={styles.aboutCard}>
-                                        <FontAwesomeIcon className={styles.aboutIcon} icon={faPlayCircle} />
-                                        <div className={styles.aboutContext}>
-                                            <h2>Effective strategy</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor.</p>
-                                        </div>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={12} sm={12} md={6}>
-                                    <div className={styles.aboutCard}>
-                                        <FontAwesomeIcon className={styles.aboutIcon} icon={faPlayCircle} />
-                                        <div className={styles.aboutContext}>
-                                            <h2>Effective strategy</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor.</p>
-                                        </div>
-                                    </div>
-                                </Grid>
-                            </Grid>
+                            <HomeContext.Consumer>
+                                {({abouts})=>(
+                                    <Grid container spacing={2}>
+                                        {(abouts.about).map((a)=>(
+                                            <Grid item xs={12} sm={12} md={6}>
+                                                <div className={styles.aboutCard}>
+                                                    <FontAwesomeIcon className={styles.aboutIcon} icon={faPlayCircle} />
+                                                    <div className={styles.aboutContext}>
+                                                        <h2>{a.title}</h2>
+                                                        <p>{a.description}</p>
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                        ))}
+                                    </Grid>
+                                )}
+                            </HomeContext.Consumer>
                         </div>
                     </Grid>
                 </Grid>
