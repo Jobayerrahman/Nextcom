@@ -1,5 +1,3 @@
-@import '../../styles/colors.scss';
-
 .dashboardWrapper{
     height: 80vh;
     width: 100%;
@@ -14,13 +12,18 @@
 
 .dashboardFormWrapper{
     margin: 0px 20px;
-    width: 500px;
+    width: 700px;
 }
 
 .dashboardFormWrapper h2{
     font-size: 18px;
     padding: 20px 0px;
     font-weight: 600;
+}
+
+.dashboardInfoWrapper{
+    width: 100%;
+    overflow-y: scroll;
 }
 
 .dashboardInfoWrapper h2{
@@ -60,5 +63,21 @@
         font-size: 22px;
         border-radius: 5px;
         padding: 15px;
+    }
+}
+
+.dashboardFormImage{
+    display: flex;
+    margin-bottom: 20px;
+    
+    button{
+        padding: 5px 10px;
+        width: 80px;
+        background-color: #0c0c0c;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 10px;
+        cursor: pointer;
     }
 }
