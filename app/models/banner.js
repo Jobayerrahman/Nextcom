@@ -13,7 +13,7 @@ const bannerSchema = new Schema(
             maxlength: [100, 'Description cannot be more than 100 characters'],
         },
         image_url: {
-            required: [true, 'Please provide an image url for serveice.'],
+            required: [false, 'Please provide an image url for serveice.'],
             type: String,
           },
     },
