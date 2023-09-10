@@ -8,7 +8,7 @@ class Dashboard extends Component {
         super(props);
 
         this.inputTitleRef= createRef();
-        this.inputDescribtionRef= createRef();
+        this.inputDescriptionRef= createRef();
 
         this.state = {
             selectedFile: null,
@@ -36,21 +36,21 @@ class Dashboard extends Component {
         e.preventDefault();
         
         const title         = this.inputTitleRef.current.value;
-        const describtion   = this.inputDescribtionRef.current.value;
+        const description  = this.inputDescriptionRef.current.value;
 
 
-        if(!title || !describtion) {
+        if(!title || !description) {
             alert("Title and Describtion is required!");
         }
 
+        const request = {
+            method: 'POST',
+            headers: { 'Content-Type' : 'application/json'},
+            body: JSON.stringify({title : title, description: description})
+        };
+
         try{
-            const res = await fetch("/api/topbanner",{
-                method: "POST",
-                headers:{
-                    "Content-type": "application/json",
-                },
-                body: JSON.stringify({ title, describtion }),
-            });
+            const res = await fetch('/api/topbanner', request);
 
             if(res.ok) {
                 router.push("/admin");
@@ -71,7 +71,7 @@ class Dashboard extends Component {
                             <TextField id="title" label="Title " variant="outlined" inputRef={this.inputTitleRef}/>
                         </div>
                         <div className={styles.dashboardFormField}>
-                            <TextField id="describtion" label="Describtion " variant="outlined" inputRef={this.inputDescribtionRef}/>
+                            <TextField id="describtion" label="Describtion " variant="outlined" inputRef={this.inputDescriptionRef}/>
                         </div>
                         <div className={styles.dashboardFormImage}>
                             <input type="file" onChange={this.onFileChange} />
