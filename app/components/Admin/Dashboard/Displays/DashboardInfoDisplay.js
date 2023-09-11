@@ -40,13 +40,16 @@ class DashboardInfoDisplay extends Component {
 
     }
 
-    handleModalOpen(){
-        console.log("Paici ami tore!")
+    handleModalOpen = () =>{
         this.setState({ showModal: true });
     }
 
+    handleModalClose = () =>{
+        this.setState({ showModal: false });
+    }
+
     render() {
-        const { topbanner } = this.state;
+        const { topbanner, showModal } = this.state;
 
         return (
             <div className={styles.infoDisplayWrapper}>
@@ -75,13 +78,13 @@ class DashboardInfoDisplay extends Component {
                             </div>
                         </div>
                         <div className={styles.infoAction}>
-                            <FontAwesomeIcon onClick={this.props.handleModalOpen} className={styles.infoActionBtn} icon={faFile} />
+                            <FontAwesomeIcon onClick={this.handleModalOpen} className={styles.infoActionBtn} icon={faFile} />
                             <FontAwesomeIcon className={styles.infoActionBtn} icon={faPenToSquare} />
                             <FontAwesomeIcon onClick={(event) => this.handleDelete(t._id, event)} className={styles.infoActionBtn} icon={faTrash} />
                         </div>
                     </div>
                 ))}
-                {/* <Displaymodal showModal={showModal}/> */}
+                <Displaymodal show={showModal} close={this.handleModalClose}/>
             </div>
         );
     }

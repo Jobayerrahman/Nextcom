@@ -4,12 +4,7 @@ import DashboardInfoDisplay from './Displays/DashboardInfoDisplay';
 import DashboardForm from './Forms/DashboardForm';
 
 class Dashboard extends Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
-        const { showModal } = this.props;
         return (
             <div className={styles.dashboardWrapper}>
                 <div className={styles.dashboardFormWrapper}>
