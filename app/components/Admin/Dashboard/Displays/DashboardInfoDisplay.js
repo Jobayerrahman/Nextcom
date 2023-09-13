@@ -12,6 +12,7 @@ class DashboardInfoDisplay extends Component {
         this.state = {
             topbanner: [],
             showModal: false,
+            item: [],
         };
     }
 
@@ -40,17 +41,20 @@ class DashboardInfoDisplay extends Component {
 
     }
 
-    handleModalOpen = () =>{
-        this.setState({ showModal: true });
+    handleModalOpen = async (id,event) =>{
+        event.preventDefault();
+        const request = { method: 'GET', };
+        await fetch(`/api/topbanner/${id}`, request)
+            .then(response => response.json())
+            .then(data => this.setState({ showModal: true, item: data.data }));
     }
-
+    
     handleModalClose = () =>{
         this.setState({ showModal: false });
     }
-
+    
     render() {
-        const { topbanner, showModal } = this.state;
-
+        const { item, topbanner, showModal } = this.state;
         return (
             <div className={styles.infoDisplayWrapper}>
                 {topbanner.map((t)=>(
@@ -78,13 +82,13 @@ class DashboardInfoDisplay extends Component {
                             </div>
                         </div>
                         <div className={styles.infoAction}>
-                            <FontAwesomeIcon onClick={this.handleModalOpen} className={styles.infoActionBtn} icon={faFile} />
-                            <FontAwesomeIcon className={styles.infoActionBtn} icon={faPenToSquare} />
+                            <FontAwesomeIcon onClick={(event) => this.handleModalOpen(t._id, event)} className={styles.infoActionBtn} icon={faFile} />
+                            <FontAwesomeIcon onClick={(event) => this.props.handleEdit(t._id, event)} className={styles.infoActionBtn} icon={faPenToSquare} />
                             <FontAwesomeIcon onClick={(event) => this.handleDelete(t._id, event)} className={styles.infoActionBtn} icon={faTrash} />
                         </div>
                     </div>
                 ))}
-                <Displaymodal show={showModal} close={this.handleModalClose}/>
+                <Displaymodal banner={item} show={showModal} close={this.handleModalClose}/>     
             </div>
         );
     }

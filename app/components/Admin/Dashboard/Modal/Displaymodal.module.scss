@@ -33,3 +33,38 @@
     display: flex;
     flex-direction: column;
 }
+
+.modalHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+.modalHeader h2{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.modalBody{
+  padding: 20px 5px;
+}
+
+.displayItem{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.displayItem h4{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 20px;
+}
+
+.displayItem h6{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 12px 0px;
+}
