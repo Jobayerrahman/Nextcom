@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Process.module.scss';
 import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
+// import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
@@ -73,7 +73,7 @@ export default function FullWidthProcessTabs(){
                     <Tab className={styles.processWrapperTab} label="Execution" {...allProps(3)}/>
                 </Tabs>
             </div>
-            <SwipeableViews
+            {/* <SwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={value}
                 onChangeIndex={hanadleChangeIndex}
@@ -130,7 +130,7 @@ export default function FullWidthProcessTabs(){
                         </div>
                     </div>
                 </ProcessTab>
-            </SwipeableViews>
+            </SwipeableViews> */}
         </div>
     )
 }

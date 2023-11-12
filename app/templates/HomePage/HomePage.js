@@ -9,7 +9,6 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Member from "../../components/Member/Member";
 import About from "../../components/About/About";
 import Expertise from "../../components/Expertise/Expertise";
-import Process from "../../components/Process/Process";
 import Projectcarousel from "../../components/Project/Projectcarousel";
 class HomePage extends Component {
     render(){
@@ -19,7 +18,6 @@ class HomePage extends Component {
                 <AllService/>
                 <About/>
                 <Projectcarousel/>
-                <Process/>
                 <Expertise/>
                 <Videoplayer/>
                 <Summary/>
