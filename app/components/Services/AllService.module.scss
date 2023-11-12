@@ -1,6 +1,12 @@
+@import '../../styles/container';
+
 .allServiceWrapper{
-    padding: 60px 200px;
+    padding: 60px 0px;
     border-bottom: 2px solid #e1e1e1;
+}
+
+.allServiceContainer{
+    @include container-400;
 }
 
 .allServiceWrapper h2{
@@ -8,6 +14,7 @@
     color: #000;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
+    margin-top: 0;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -29,11 +36,23 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 1440px) {
+    .allServiceWrapper{
+        padding: 60px 0px;
+    }
+    .allServiceContainer{
+        @include container-200;
+    }
+}
+
 
 @media only screen and (max-width: 1024px) {
 
     .allServiceWrapper{
-        padding: 60px 20px;
+        padding: 60px 0px;
+    }
+    .allServiceContainer{
+        @include container-50;
     }
 
     .allServiceDescribtion{
@@ -48,8 +67,13 @@
 
 @media only screen and (max-width: 500px) {
 
+    .allServiceContainer{
+        @include container-0;
+    }
+
     .allServiceDescribtion{
         padding: 0px 20px;
     }
+
 
 }

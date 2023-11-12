@@ -35,6 +35,7 @@ class Projectcarousel extends Component {
           };
         return (
             <div className={styles.projectCarouselWrapper}>
+              <div className={styles.projectCarouselContainer}>
                 <Slider {...settings}>
                     <div>
                         <Project/>
@@ -55,6 +56,7 @@ class Projectcarousel extends Component {
                         <Project/>
                     </div>
                 </Slider>
+              </div>
             </div>
         );
     }

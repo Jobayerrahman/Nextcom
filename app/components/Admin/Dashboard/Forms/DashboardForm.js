@@ -65,10 +65,10 @@ class DashboardForm extends Component {
         return (
             <form className={styles.dashboardForm} onSubmit={this.handleSubmit}>
                 <div className={styles.dashboardFormField}>
-                    <TextField id="title" label="Title " variant="outlined" inputRef={this.inputTitleRef} value={showEditForm ? banner.title : ''}/>
+                    <TextField id="title" label="Title " variant="outlined" inputRef={this.inputTitleRef} defaultValue={showEditForm ? banner.title : ''}/>
                 </div>
                 <div className={styles.dashboardFormField}>
-                    <TextField id="describtion" label="Describtion " variant="outlined" inputRef={this.inputDescriptionRef} value={showEditForm ? banner.description : ''}/>
+                    <TextField id="describtion" label="Describtion " variant="outlined" inputRef={this.inputDescriptionRef} defaultValue={showEditForm ? banner.description : ''}/>
                 </div>
                 <div className={styles.dashboardFormImage}>
                     <input type="file" onChange={this.onFileChange} />

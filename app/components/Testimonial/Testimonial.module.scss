@@ -1,12 +1,12 @@
 @import '../../styles/colors.scss';
+@import '../../styles/container';
+
 .testimonialWrapper{
-    text-align: center;
     background-image: url('../../../public/Image/Banner-03.jpg');
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5rem;
 }
 
 .testimonialOverlay{
@@ -14,8 +14,12 @@
     height: 600px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
+}
+
+.testimonialContainer{
+    @include container-400;
     display: flex;
-    padding: 100px;
+    padding: 100px 0px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
@@ -101,6 +105,12 @@
     text-align: right !important;
 }
 
+@media only screen and (max-width: 1440px) {
+    .testimonialContainer{
+        @include container-100;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .testimonialWrapper{
         height: 800px;
@@ -108,12 +118,17 @@
     
     .testimonialOverlay{
         height: 800px;
+    }
+
+    .testimonialContainer{
+        @include container-50;
         padding: 5%;
         flex-direction: column;
     }
 
     .testimonialContent{
-        padding: 0px 60px;
+        padding: 0px 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -125,6 +140,10 @@
     
     .testimonialOverlay{
         height: 900px;
+    }
+
+    .testimonialContainer{
+        @include container-0;
     }
 
     .testimonialContent{

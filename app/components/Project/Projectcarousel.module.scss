@@ -1,18 +1,35 @@
+@import '../../styles/container';
+
 .projectCarouselWrapper{
     background: #f3f3f3;
-    padding: 100px;
+    padding: 100px 0px;
+}
+
+.projectCarouselContainer{
+    @include container-400;
+}
+
+@media only screen and (max-width: 1440px) {
+    .projectCarouselContainer{
+        @include container-200;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     .projectCarouselWrapper{
-        padding: 100px 20px;
+        padding: 100px 5px;
     }
-
+    .projectCarouselContainer{
+        @include container-50;
+    }
 }
 
 
 @media only screen and (max-width: 500px) {
     .projectCarouselWrapper{
         padding: 100px 10px;
+    }
+    .projectCarouselContainer{
+        @include container-0;
     }
 }

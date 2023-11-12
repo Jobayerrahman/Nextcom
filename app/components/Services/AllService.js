@@ -17,17 +17,19 @@ function AllService({services}){
     return(
         <>
             <div className={styles.allServiceWrapper}>
-                <h2>What We Do</h2>
-                <div className={styles.allServiceDescribtion}>Lorem ipsum is simply dummy text printing typesetting industry 
-                lorem ipsum has dummy. Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
-                Lorem ipsum is simply dummy text printing typesetting industry lorem. </div>
-                <HomeContext.Consumer>
-                    {({services}) =>(
-                        <div className={styles.allService}>
-                            {(services.service).map((s)=> <Service key={s.id} service={s}/>)}
-                        </div>
-                    )}
-                </HomeContext.Consumer>
+                <div className={styles.allServiceContainer}>
+                    <h2>What We Do</h2>
+                    <div className={styles.allServiceDescribtion}>Lorem ipsum is simply dummy text printing typesetting industry 
+                    lorem ipsum has dummy. Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
+                    Lorem ipsum is simply dummy text printing typesetting industry lorem. </div>
+                    <HomeContext.Consumer>
+                        {({services}) =>(
+                            <div className={styles.allService}>
+                                {(services.service).map((s)=> <Service key={s.id} service={s}/>)}
+                            </div>
+                        )}
+                    </HomeContext.Consumer>
+                </div>
             </div>
         </>
     );

@@ -1,6 +1,11 @@
 @import '../../styles/colors.scss';
+@import '../../styles/container';
 .memberWrapper{
-    padding: 100px;
+    padding: 100px 0px;
+}
+
+.memberContainer{
+    @include container-400;
 }
 
 .memberHeading{
@@ -45,7 +50,7 @@
 }
 
 .memberCrad{
-    padding: 0px 30px;
+    padding: 0px 10px;
     text-align: center;
     width: 100%;
 }
@@ -81,28 +86,35 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+@media only screen and (max-width: 1440px) {
+    .memberContainer{
+        @include container-200;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
-    .memberWrapper{
-        padding: 100px 60px;
+    .memberContainer{
+        @include container-50;
     }
     .memberIntroduction{
         text-align: center;
         margin-bottom: 50px;
     }
     .memberImage{
-        margin: 0px 40px 20px 40px;
+        margin: 0px 40px 20px 60px;
     }
 }
 
 
 @media only screen and (max-width: 500px) {
-    .memberWrapper{
-        padding: 100px 20px;
+    .memberContainer{
+        @include container-0;
     }
+
     .memberIntroduction{
         margin-bottom: 50px;
     }
     .memberImage{
-        margin: 0px 30px 20px 30px;
+        margin: 0px 30px 20px 70px;
     }
 }

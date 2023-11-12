@@ -38,7 +38,8 @@ class Member extends Component {
           };
         return (
             <div className={styles.memberWrapper}>
-                <Grid container spacing={2}>
+              <div className={styles.memberContainer}>
+                <Grid container alignItems="center" spacing={2}>
                     <Grid item xs={12} sm={12} md={4}>
                         <div className={styles.memberIntroduction}>
                             <h4 className={styles.memberHeading}>Meet the team</h4>
@@ -91,6 +92,7 @@ class Member extends Component {
                         </div>
                     </Grid>
                 </Grid>
+              </div>
             </div>
         );
     }

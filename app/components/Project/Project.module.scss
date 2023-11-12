@@ -90,3 +90,18 @@
     border: 2px solid #000;
     background: transparent;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .projectWrapper{
+        margin: 10px 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .projectWrapper{
+        margin: 10px 20px;
+    }
+    
+}

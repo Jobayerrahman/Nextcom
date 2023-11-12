@@ -1,6 +1,12 @@
+@import '../../styles/container';
+
 .aboutWrapper{
     margin: 0px;
-    padding: 100px;
+    padding: 60px 0px;
+}
+
+.aboutContainer{
+    @include container-400;
 }
 
 .aboutIntroduction{
@@ -72,11 +78,20 @@
     font-weight: 300;
 }
 
+@media only screen and (max-width: 1440px) {
+    .aboutContainer{
+        @include container-200;
+    }
+}
+
 
 @media only screen and (max-width: 1024px) {
 
     .aboutWrapper{
-        padding: 60px 40px;
+        padding: 30px 0px;
+    }
+    .aboutContainer{
+        @include container-100;
     }
     .aboutIntroduction{
         text-align: center;
@@ -95,8 +110,13 @@
 @media only screen and (max-width: 500px) {
 
     .aboutWrapper{
-        padding: 40px 20px;
+        padding: 20px 0px;
     }
+
+    .aboutContainer{
+        @include container-0;
+    }
+    
 
     .aboutContent{
         padding: 0px;
