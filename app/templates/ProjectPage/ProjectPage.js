@@ -3,7 +3,7 @@ import Project from '../../components/Project/Project';
 import TopNagivation from '../../components/TopNavigation/TopNavigation';
 import Summary from '../../components/Summary/Summary';
 
-class Projectpage extends Component {
+class ProjectPage extends Component {
     render() {
         return (
             <div>
@@ -17,4 +17,4 @@ class Projectpage extends Component {
     }
 }
 
-export default Projectpage;
+export default ProjectPage;
