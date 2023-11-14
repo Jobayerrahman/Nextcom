@@ -32,7 +32,7 @@ export async function getStaticProps(){
           about: about_Data.data,
           blog: blog_Data.data
       }, 
-      fallback: false
+      revalidate: 1,
   }
 }
 
