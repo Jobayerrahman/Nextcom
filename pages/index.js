@@ -34,10 +34,10 @@ export async function getStaticProps(){
   const blog = await loadBlogs()
   return { 
       props:{
-          topBanner: topBanner?.data || null,
-          service: service?.data || null,
-          about: about?.data || null,
-          blog: blog?.data || null
+          topBanner: topBanner?.data || [],
+          service: service?.data || [],
+          about: about?.data || [],
+          blog: blog?.data || []
       }, 
       revalidate: 1,
   }
