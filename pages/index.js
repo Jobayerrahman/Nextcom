@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Default from '../app/layouts/Default/Default';
 import HomePage from '../app/templates/HomePage/HomePage';
 import HomeContext from '../app/libs/contextApi/HomeContext';
+import { loadTopBanner } from '../app/libs/loadApi/LoadTopBanners';
+import { loadService } from '../app/libs/loadApi/LoadServices';
+import { loadAbout } from '../app/libs/loadApi/LoadAbouts';
+import { loadBlogs } from '../app/libs/loadApi/LoadBlogs';
 
 class Home extends Component{
   render(){
@@ -17,20 +21,16 @@ class Home extends Component{
 }
 
 export async function getStaticProps(){
-  const topBanner_Response = await fetch('http://localhost:3000/api/topbanner');
-  const service_Response = await fetch('http://localhost:3000/api/services');
-  const about_Response = await fetch('http://localhost:3000/api/abouts');
-  const blog_Response = await fetch('http://localhost:3000/api/blogs');
-  const topBanner_Data = await topBanner_Response.json()
-  const service_Data = await service_Response.json()
-  const about_Data = await about_Response.json()
-  const blog_Data = await blog_Response.json()
+  const topBanner = await loadTopBanner();
+  const service = await loadService();
+  const about = await loadAbout();
+  const blog = await loadBlogs()
   return { 
       props:{
-          topBanner: topBanner_Data.data,
-          service: service_Data.data,
-          about: about_Data.data,
-          blog: blog_Data.data
+          topBanner: topBanner.data,
+          service: service.data,
+          about: about.data,
+          blog: blog.data
       }, 
       revalidate: 1,
   }

@@ -18,7 +18,7 @@ export async function getServerSideProps(){
 const service = ({services}) => {
     return (
         <Default>
-            <ServicePage services={services}/>
+            {/* <ServicePage services={services}/> */}
         </Default>
     );
 };
