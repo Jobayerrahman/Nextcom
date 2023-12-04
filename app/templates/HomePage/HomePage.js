@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Default from "../../layouts/Default/Default";
 import TopBanner from "../../components/Banner/TopBanner";
 import AllService from "../../components/Services/AllService";
 import Summary from "../../components/Summary/Summary";
@@ -14,7 +13,7 @@ import Projectcarousel from "../../components/Project/Projectcarousel";
 class HomePage extends Component {
     render(){
         return (
-            <Default>
+            <>
                 <TopBanner/>
                 <AllService/>
                 <About/>
@@ -26,7 +25,7 @@ class HomePage extends Component {
                 <Testimonial/>
                 <Member/>
                 <Partner/>
-            </Default>
+            </>
         )
     }
 }

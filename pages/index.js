@@ -11,9 +11,11 @@ class Home extends Component{
   render(){
     const {topBanner, service, about, blog} = this.props;
     return (
-      <HomeContext.Provider value={{topBannerItems:{topBanner}, services:{service}, abouts:{about}, blogs:{blog}}}>
-        <HomePage/>
-      </HomeContext.Provider>
+      <Default>
+        <HomeContext.Provider value={{topBannerItems:{topBanner}, services:{service}, abouts:{about}, blogs:{blog}}}>
+          <HomePage/>
+        </HomeContext.Provider>
+      </Default>
     )
   }
 }
@@ -32,10 +34,10 @@ export async function getStaticProps(){
   const blog = await loadBlogs()
   return { 
       props:{
-          topBanner: topBanner.data,
-          service: service.data,
-          about: about.data,
-          blog: blog.data
+          topBanner: topBanner?.data || null,
+          service: service?.data || null,
+          about: about?.data || null,
+          blog: blog?.data || null
       }, 
       revalidate: 1,
   }
