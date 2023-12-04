@@ -20,6 +20,13 @@ class Home extends Component{
   }
 }
 
+Home.defaultProps = {
+  topBanner: [],
+  service: [],
+  about: [],
+  blog:[]
+}
+
 export async function getStaticProps(){
   const topBanner = await loadTopBanner();
   const service = await loadService();
