@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const isProduction = process.env.NODE_ENV === 'production'
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -12,6 +13,7 @@ const nextConfig = {
       },
     ],
   },
+  assetPrefix: isProduction ? 'https://nextcom-company-site.vercel.app' : 'http://localhost:3000',
 }
 
 module.exports = nextConfig
