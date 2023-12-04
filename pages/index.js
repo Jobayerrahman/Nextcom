@@ -11,11 +11,9 @@ class Home extends Component{
   render(){
     const {topBanner, service, about, blog} = this.props;
     return (
-      <Default>
-        <HomeContext.Provider value={{topBannerItems:{topBanner}, services:{service}, abouts:{about}, blogs:{blog}}}>
-          <HomePage/>
-        </HomeContext.Provider>
-      </Default>
+      <HomeContext.Provider value={{topBannerItems:{topBanner}, services:{service}, abouts:{about}, blogs:{blog}}}>
+        <HomePage/>
+      </HomeContext.Provider>
     )
   }
 }
