@@ -13,7 +13,7 @@ const nextConfig = {
       },
     ],
   },
-  assetPrefix: isProduction ? 'https://jsonplaceholder.typicode.com/posts' : 'http://localhost:3000',
+  assetPrefix: isProduction ? 'https://nextcom-company-site.vercel.app/' : 'http://localhost:3000',
 }
 
 module.exports = nextConfig
