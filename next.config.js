@@ -7,11 +7,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'http',
-        hostname: 'localhost',
+        hostname: isProduction ? 'nextcom-company-site.vercel.app' : 'localhost',
         port: '3000',
         pathname: '/Image/**',
       },
     ],
+    domains: ['nextcom-company-site.vercel.app']
   },
   assetPrefix: isProduction ? 'https://nextcom-company-site.vercel.app/' : 'http://localhost:3000',
 }

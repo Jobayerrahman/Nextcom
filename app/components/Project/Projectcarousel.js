@@ -35,6 +35,10 @@ class Projectcarousel extends Component {
           };
         return (
             <div className={styles.projectCarouselWrapper}>
+              <h2>Our Projects</h2>
+              <p>Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
+                Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
+                Lorem ipsum is simply dummy text printing typesetting industry lorem.</p>
               <div className={styles.projectCarouselContainer}>
                 <Slider {...settings}>
                     <div>

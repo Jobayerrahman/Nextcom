@@ -2,12 +2,11 @@
 
 .projectCarouselWrapper{
     background: #f3f3f3;
-    padding: 100px 0px;
+    padding: 100px 400px;
+    text-align: center;
 }
 
-.projectCarouselContainer{
-    @include container-400;
-}
+
 
 @media only screen and (max-width: 1440px) {
     .projectCarouselContainer{

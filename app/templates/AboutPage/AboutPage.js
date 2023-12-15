@@ -6,6 +6,7 @@ export default function AboutPage(){
     return(
         <>
             <TopNagivation/>
+            <About/>
             <Expertise/>
         </>
     )
