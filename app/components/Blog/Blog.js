@@ -12,10 +12,10 @@ class Blog extends Component {
                     <h4 className={styles.blogHeader}>Get the latest insights</h4>
                     <h2 className={styles.blogHeadTitle}>Stay updated with the latest trends and business news</h2>
                     <HomeContext.Consumer>
-                            {({blogs})=>(<Grid container spacing={4}>
+                            {({blogs})=>(
+                                <Grid container className={styles.blogCardWrapper} spacing={4}>
                                     {(blogs.blog).map((blog)=>(
-                                            <Grid container item alignItems="center"
-                                            justifyContent="center" xs={12} sm={6} md={3} key={blog.id}>
+                                            <Grid item alignItems="center" xs={12} sm={6} md={3} key={blog.id}>
                                                 <div className={styles.blogCard}>
                                                     <Image 
                                                         className={styles.blogImage} 

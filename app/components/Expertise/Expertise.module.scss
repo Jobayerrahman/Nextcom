@@ -1,4 +1,5 @@
 @import '../../styles/container';
+@import '../../styles/colors';
 
 .expertiseWrapper{
     margin: 0px;
@@ -13,54 +14,66 @@
 }
 
 .expertiseIntroduction{
+    display: flex;
+    flex-wrap: nowrap;
     padding: 60px 20px;
+    flex-direction: column;
 }
 
 .expertiseIntroduction h4{
     font-weight: 600;
     font-size: 14px;
-    color: #707070;
+    color: $text-secondColor;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .expertiseIntroduction h2{
     font-size: 32px;
-    color: #000000;
-    letter-spacing: -2px;
     margin-top: 0px;
-    margin-bottom: 100px;
     font-weight: 600;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+    color: $text-primaryColor;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .expertiseIntroduction a{
-    color: #ffffff;
-    background: #000;
-    padding: 10px;
+    width: 150px !important;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px;
+    color: $text-white;
+    text-align: center;
+    border-radius: 0.2rem;
+    background: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .expertiseIntroduction a:hover{
-    background: #303030;
+    background: $secondary-color;
 }
 
 .expertiseContent{
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
 }
 
 .expertiseContext{
     padding: 0px 20px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .expertiseProgressBar{
     width: 170px;
     height: 170px;
-    margin: 0px 50px;
+    margin: 0px
 }
 
 .expertiseContext h2{
@@ -81,7 +94,7 @@
 
 @media only screen and (max-width: 1440px) {
     .expertiseContainer{
-        @include container-200;
+        @include container-100;
     }
 }
 
@@ -89,6 +102,9 @@
 @media only screen and (max-width: 1024px) {
     .expertiseWrapper{
         padding: 50px 0px;
+    }
+    .expertiseIntroduction{
+        align-items: center;
     }
     .expertiseContainer{
         @include container-50;
@@ -107,7 +123,7 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 390px) {
     .expertiseWrapper{
         padding: 50px 0px;
     }

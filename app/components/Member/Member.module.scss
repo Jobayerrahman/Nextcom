@@ -1,5 +1,7 @@
 @import '../../styles/colors.scss';
 @import '../../styles/container';
+@import '../../styles/colors';
+
 .memberWrapper{
     padding: 100px 0px;
 }
@@ -8,36 +10,47 @@
     @include container-400;
 }
 
+.memberIntroduction{
+    display: flex;
+    flex-direction: column;
+}
+
 .memberHeading{
     font-size: 14px;
-    color: #707070;
-    text-transform: uppercase;
+    font-weight: 600;
     margin-bottom: 10px;
+    color: $text-secondColor;
+    text-transform: uppercase;
 }
 
 .memberTitle{
     font-size: 32px;
-    color: #000000;
-    margin-bottom: 40px;
-    letter-spacing: -2px;
     margin-top: 0px;
-    margin-bottom: 20px;
     font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+    color: $text-primaryColor;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .memberDescribtion{
     font-size: 16px;
-    color: #707070;
     margin-bottom: 40px;
+    color: $text-secondColor;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .memberButton{
-    color: #ffffff;
-    background: $primary-color;
-    padding: 10px;
+    width: 200px !important;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px;
+    color: $text-white;
+    text-align: center;
+    border-radius: 0.2rem;
+    background: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .memberButton:hover{
@@ -50,45 +63,47 @@
 }
 
 .memberCrad{
-    padding: 0px 10px;
-    text-align: center;
     width: 100%;
+    padding: 0px 10px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
 }
 
 .memberImage{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 0px 20px 30px 20px;
+    margin-bottom: 30px;
     object-fit: cover;
 }
 
 .memberProfileTitle{
-    font-size: 20px;
-    color: #000000;
     margin: 0px;
+    font-size: 22px;
     font-weight: 600;
+    color: $text-primaryColor;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .memberProfileDesignation{
-    font-size: 14px;
-    color: #707070;
     margin: 0px;
-    margin-bottom: 40px;
+    font-size: 14px;
+    color: $text-primaryColor;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .memberProfileDescribtion{
-    font-size: 16px;
-    color: #474747;
+    font-size: 12px;
+    color: $text-secondColor;
     margin-bottom: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+
 @media only screen and (max-width: 1440px) {
     .memberContainer{
-        @include container-200;
+        @include container-100;
     }
 }
 
@@ -98,23 +113,31 @@
     }
     .memberIntroduction{
         text-align: center;
+        align-items: center;
         margin-bottom: 50px;
     }
     .memberImage{
-        margin: 0px 40px 20px 60px;
+        margin-bottom: 20px;
     }
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 390px) {
     .memberContainer{
         @include container-0;
     }
 
     .memberIntroduction{
         margin-bottom: 50px;
+        padding: 0px 20px;
     }
+
+    .memberTitle{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
     .memberImage{
-        margin: 0px 30px 20px 70px;
+        margin-bottom: 20px;
     }
 }

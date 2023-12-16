@@ -1,5 +1,6 @@
 @import '../../styles/colors.scss';
 @import '../../styles/container';
+@import '../../styles/colors';
 
 .testimonialWrapper{
     background-image: url('../../../public/Image/Banner-03.jpg');
@@ -28,33 +29,41 @@
 }
 
 .testimonialContent{
+    display: flex;
     text-align: left;
     padding: 0px 30px;
+    flex-direction: column;
 }
 
 .testimonialContent h2{
-    color: #fff;
     font-size: 46px;
     font-weight: 700;
     letter-spacing: -2px;
-    line-height: 58px;
+    line-height: 40px;
     margin-bottom: 20px;
+    color: $text-white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .testimonialContent p{
-    color: #fff;
     font-size: 16px;
+    font-weight: 500;
+    color: $text-white;
     margin-bottom: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .testimonialContent a{
-    background: $primary-color;
-    color: #fff;
-    padding: 15px;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 5px;
+    width: 150px !important;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px;
+    color: $text-white;
+    text-align: center;
+    border-radius: 0.2rem;
+    background: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .testimonialContent a:hover{
@@ -133,7 +142,7 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 390px) {
     .testimonialWrapper{
         height: 900px;
     }
@@ -150,8 +159,12 @@
         padding: 10px;
     }
 
+    .testimonialContent h2{
+        font-size: 36px;
+    }
+
     .testimonialScrollerBody{
-        width: 22rem;
+        width: 20rem;
         border-radius: 10px;
         padding: 20px;
     }
