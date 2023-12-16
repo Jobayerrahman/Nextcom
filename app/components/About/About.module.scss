@@ -1,4 +1,5 @@
 @import '../../styles/container';
+@import '../../styles/colors';
 
 .aboutWrapper{
     margin: 0px;
@@ -10,20 +11,23 @@
 }
 
 .aboutIntroduction{
+    display: flex;
+    flex-wrap: nowrap;
     padding: 60px 20px;
+    flex-direction: column;
 }
 
 .aboutIntroduction h4{
     font-weight: 600;
     font-size: 14px;
-    color: #707070;
+    color: $text-secondColor;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .aboutIntroduction h2{
     font-size: 32px;
-    color: #000000;
+    color: $text-primaryColor;
     letter-spacing: -2px;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -32,15 +36,20 @@
 }
 
 .aboutIntroduction a{
-    color: #ffffff;
-    background: #5a55a8;
-    padding: 15px;
-    border-radius: 10px;
+    width: 150px !important;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px;
+    color: $text-white;
+    text-align: center;
+    border-radius: 0.2rem;
+    background: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .aboutIntroduction a:hover{
-    background: #1565c0;
+    background: $secondary-color;
 }
 
 .aboutContent{
@@ -55,8 +64,8 @@
 }
 
 .aboutIcon{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 .aboutContext{
@@ -64,18 +73,18 @@
 }
 
 .aboutContext h2{
-    font-size: 24px;
-    color: #000000;
-    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 25px;
     margin-bottom: 10px;
+    color: $secondary-color;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .aboutContext p{
-    font-size: 16px;
-    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-secondColor;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 300;
 }
 
 @media only screen and (max-width: 1440px) {

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import styles from './About.module.scss';
+import Image from 'next/image';
 import Grid from '@mui/material/Grid';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPlayCircle} from '@fortawesome/free-solid-svg-icons';
+import styles from './About.module.scss';
+import React, { Component } from 'react';
 import HomeContext from '../../libs/contextApi/HomeContext';
+
 class About extends Component {
     render() {
         return (
@@ -25,7 +25,14 @@ class About extends Component {
                                             {(abouts.about).map((a)=>(
                                                 <Grid item xs={12} sm={12} md={6}>
                                                     <div className={styles.aboutCard}>
-                                                        <FontAwesomeIcon className={styles.aboutIcon} icon={faPlayCircle} />
+                                                        <Image 
+                                                            className={styles.aboutIcon} 
+                                                            src={a.image_url} 
+                                                            alt="about icon"
+                                                            width={30} 
+                                                            height={30}
+                                                            style={{objectFit: 'cover'}}
+                                                        />
                                                         <div className={styles.aboutContext}>
                                                             <h2>{a.title}</h2>
                                                             <p>{a.description}</p>
