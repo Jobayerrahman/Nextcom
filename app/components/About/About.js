@@ -17,13 +17,13 @@ class About extends Component {
                                 <a>Discover Nextcom</a>
                             </div>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={8}>
+                        <Grid item container justifyContent="center" xs={12} sm={12} md={8}>
                             <div className={styles.aboutContent}>
                                 <HomeContext.Consumer>
                                     {({abouts})=>(
-                                        <Grid container spacing={2}>
+                                        <Grid container justifyContent="center" spacing={2}>
                                             {(abouts.about).map((a)=>(
-                                                <Grid item xs={12} sm={12} md={6}>
+                                                <Grid container justifyContent="center" item xs={12} sm={12} md={6}>
                                                     <div className={styles.aboutCard}>
                                                         <Image 
                                                             className={styles.aboutIcon} 

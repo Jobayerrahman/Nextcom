@@ -27,11 +27,11 @@
 
 .aboutIntroduction h2{
     font-size: 32px;
-    color: $text-primaryColor;
-    letter-spacing: -2px;
     margin-top: 0px;
-    margin-bottom: 50px;
     font-weight: 600;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+    color: $text-primaryColor;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,7 +58,7 @@
 
 .aboutCard{
     display: flex;
-    padding: 20px;
+    padding: 15px;
     margin: 10px;
     justify-content: center;
 }
@@ -89,7 +89,7 @@
 
 @media only screen and (max-width: 1440px) {
     .aboutContainer{
-        @include container-200;
+        @include container-100;
     }
 }
 
@@ -100,23 +100,30 @@
         padding: 30px 0px;
     }
     .aboutContainer{
-        @include container-100;
+        @include container-50;
     }
     .aboutIntroduction{
+        align-items: center !important;
         text-align: center;
     }
     .aboutIntroduction h2{
-        letter-spacing: 0px;
+        font-size: 24px;
+        letter-spacing: 0.2px;
         margin-bottom: 30px;
     }
     .aboutContent{
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
+    .aboutCard{
+        padding: 5px;
+        margin: 5px;
+    }
+    
 
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 390px) {
 
     .aboutWrapper{
         padding: 20px 0px;
@@ -125,8 +132,29 @@
     .aboutContainer{
         @include container-0;
     }
-    
 
+    .aboutIntroduction{
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .aboutIntroduction h4{
+        font-size: 12px;
+    }
+    
+    .aboutIntroduction h2{
+        font-size: 24px;
+        letter-spacing: 0.2px;
+        margin-bottom: 30px;
+    }
+    
+    .aboutIntroduction a{
+        width: 150px !important;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 10px 0px;
+    }
+    
     .aboutContent{
         padding: 0px;
     }

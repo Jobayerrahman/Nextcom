@@ -1,22 +1,60 @@
 @import '../../styles/container';
+@import '../../styles/colors';
 
 .projectCarouselWrapper{
+    padding: 50px 0px;
     background: #f3f3f3;
-    padding: 100px 400px;
+}
+
+.projectCarouselHeader{
+    display: flex;
+    align-items:center; 
     text-align: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+    @include container-300;
+}
+
+.projectCarouselHeader h2{
+    font-size: 32px;
+    margin-top: 0px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: $text-primaryColor;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.projectCarouselHeader span{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: $text-secondColor;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.projectCarouselContainer{
+    @include container-400;
 }
 
 
 
 @media only screen and (max-width: 1440px) {
-    .projectCarouselContainer{
+    .projectCarouselHeader{
         @include container-200;
+        margin-bottom: 40px;
+    }
+    .projectCarouselContainer{
+        @include container-100;
     }
 }
 
 @media only screen and (max-width: 1024px) {
+    .projectCarouselHeader{
+        @include container-100;
+        margin-bottom: 30px;
+    }
     .projectCarouselWrapper{
-        padding: 100px 5px;
+        padding: 50px 5px;
     }
     .projectCarouselContainer{
         @include container-50;
@@ -24,9 +62,13 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 390px) {
     .projectCarouselWrapper{
-        padding: 100px 10px;
+        padding: 50px 10px;
+    }
+    .projectCarouselHeader{
+        @include container-0;
+        margin-bottom: 20px;
     }
     .projectCarouselContainer{
         @include container-0;

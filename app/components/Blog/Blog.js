@@ -14,8 +14,8 @@ class Blog extends Component {
                     <HomeContext.Consumer>
                             {({blogs})=>(<Grid container spacing={4}>
                                     {(blogs.blog).map((blog)=>(
-                                            <Grid item alignItems="center"
-                                                    justify="center" xs={12} sm={6} md={3} key={blog.id}>
+                                            <Grid container item alignItems="center"
+                                            justifyContent="center" xs={12} sm={6} md={3} key={blog.id}>
                                                 <div className={styles.blogCard}>
                                                     <Image 
                                                         className={styles.blogImage} 
