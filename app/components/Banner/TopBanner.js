@@ -54,7 +54,7 @@ function Item(props)
                 <div className={styles.topContent}>
                     <h1 className={styles.topTitle}>{props.item.title}</h1>
                     <h5 className={styles.topSubTitle}>{props.item.description}</h5>
-                    <Button className={styles.topButton} variant="contained">Order Now</Button>
+                    <Button className={styles.topButton}>Contact Us</Button>
                 </div>
             </div>
         </div>           

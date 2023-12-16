@@ -1,37 +1,38 @@
 @import '../../styles/colors.scss';
 
 .navBar{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    height: auto;
-    background: #fdfdfd;
-    position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
+    height: auto;
+    padding: 10px;
     z-index: 1030;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    background: #fdfdfd;
 }
 .navTitle{
-    font-size: 28px;
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
     color: $primary-color !important;
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    margin: 0px;
 }
 .navItemList{
+    width: 500px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
     align-items: center;
-    width: 500px;
+    justify-content: space-evenly;
 }
 .navItem{
-    text-decoration: none !important;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     color: $primary-color;
+    text-decoration: none !important;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
 }
 
 

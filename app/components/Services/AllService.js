@@ -20,8 +20,7 @@ function AllService({services}){
                 <div className={styles.allServiceContainer}>
                     <h2>What We Do</h2>
                     <div className={styles.allServiceDescribtion}>Lorem ipsum is simply dummy text printing typesetting industry 
-                    lorem ipsum has dummy. Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. 
-                    Lorem ipsum is simply dummy text printing typesetting industry lorem. </div>
+                    lorem ipsum has dummy. Lorem ipsum is simply dummy text printing typesetting industry lorem ipsum has dummy. </div>
                     <HomeContext.Consumer>
                         {({services}) =>(
                             <div className={styles.allService}>

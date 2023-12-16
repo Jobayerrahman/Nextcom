@@ -14,14 +14,15 @@ class Blog extends Component {
                     <HomeContext.Consumer>
                             {({blogs})=>(<Grid container spacing={4}>
                                     {(blogs.blog).map((blog)=>(
-                                            <Grid item xs={12} sm={6} md={3} key={blog.id}>
+                                            <Grid item alignItems="center"
+                                                    justify="center" xs={12} sm={6} md={3} key={blog.id}>
                                                 <div className={styles.blogCard}>
                                                     <Image 
                                                         className={styles.blogImage} 
                                                         src={blog.image_url} 
                                                         alt='' 
-                                                        width={300} 
-                                                        height={300}
+                                                        width={200} 
+                                                        height={200}
                                                         style={{
                                                             objectFit: 'cover'
                                                         }}

@@ -6,7 +6,7 @@ class TopNagivation extends Component {
         return (
             <Container fixed>
                 <div className={styles.navBar}>
-                    <h2 className={styles.navTitle}>Nextcom</h2>
+                    <a className={styles.navTitle} href="/">Nextcom</a>
                     
                     <div className={styles.navItemList}>
                         <a exact  className={styles.navItem} href="/">Home</a>

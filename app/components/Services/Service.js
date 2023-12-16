@@ -11,7 +11,7 @@ class Service extends Component{
                 <Image 
                     className={styles.serviceImage} 
                     src={image_url} 
-                    alt=""
+                    alt="service image"
                     width={320} 
                     height={192}
                     style={{objectFit: 'cover'}}
